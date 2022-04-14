@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penulisan Selector</title>
+    <style>
+      /* membuat tag h2 menjadi biru  */
+      /* h2 {
+        color: blue;
+      } */
+      /* membuat seluruh tag h3 menjadi biru */
+      /* h3 {
+        color: blue;
+      } */
+      /* menggabungkan selector h2 dan h3 */
+      h2,h3{
+        color: blue;
+      }
+      /* membuat tag strong berwarna merah tanpa spesifik di paragraf */
+      /* strong{
+        color: red;
+      } */
+      p strong{
+        color: red;
+      }
+      h2.judul, .paragraf{
+        font-style: italic;
+      }
+      #belajar_html, #belajar_css{
+        font-size: 14pt;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="judul">Belajar membuat selector</h2>
+    <p>Ini <strong>adalah </strong> sebuah<em> Paragraf</em></p>
+    <p id="belajar_html" class="paragraf">
+        Saya sedang dalam keadaan tidak baik-baik saja
+        <a href="youtube.com/kelascoding" target="_blank">Akan terbuka tab baru</a>
+    </p>
+    <p id="belajar_css" class="paragraf">Sedang dalam kondisi baik baik saja</p>
+    <br />
+    <h3 class="judul subheader">Daftar Belanja</h3>
+    <ol>
+      <li><em>Minyak Goreng Masih Mahal</em></li>
+      <li>Pertamax <strong> Naik</strong></li>
+      <li>PPN Naik</li>
+      <li>Pulsa Naik</li>
+      <li>Kebutuhan MAhal</li>
+    </ol>
+  </body>
+</html>

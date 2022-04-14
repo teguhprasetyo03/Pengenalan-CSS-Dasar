@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class</title>
+    <style>
+      .hello:link{
+        color: goldenrod;
+      }
+      .hello:hover{
+        color: red;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hello:active{
+        font-style: italic;
+        font-weight: bold;
+        size: 36px;
+        color: blue;
+      }
+      .hello:visited{
+        color: green;
+      }
+
+      li:first-child a {
+          color: mediumvioletred;
+      }
+      li:last-child a{
+        color: olivedrab;
+      }
+      li:nth-child(2) a{
+        color: navajowhite;
+      }
+      /* genap */
+      li:nth-child(even) a{
+        color: mediumblue;
+      }
+      /* ganjil */
+        li:nth-child(odd) a{
+        color: black;
+      }
+      /* p:last-of-type{
+        color: orange;
+      } */
+      p:first-of-type{
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="hello">Hello World</a>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+      <li><a href="#">Link 6</a></li>
+      <li><a href="#">Link 7</a></li>
+      <li><a href="#">Link 8</a></li>
+      <li><a href="#">Link 9</a></li>
+      <li><a href="#">Link 10</a></li>
+    </ul>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe soluta
+      beatae dolorum est in ullam accusamus minus molestiae numquam sint!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe soluta
+      beatae dolorum est in ullam accusamus minus molestiae numquam sint!
+    </p>
+  </body>
+</html>
